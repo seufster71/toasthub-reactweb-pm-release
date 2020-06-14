@@ -28,7 +28,7 @@ export default function PMReleaseView({containerState, itemState, appPrefs, onLi
 	}
 	
 	if (goBack != null && parent != null && parent != "") {
-		header = <div>{header} : <a onClick={() => goBack()} aria-hidden="true">{parent}</a></div>;
+		header = <span>{header} : <a onClick={() => goBack()} aria-hidden="true">{parent}</a></span>;
 	}
     
 	let deleteModalHeader = "Delete ";
